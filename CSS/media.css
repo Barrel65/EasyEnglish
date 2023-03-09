@@ -1,0 +1,311 @@
+@media (max-width:1200px){
+	.container{
+		max-width:970px;
+	}
+	
+	.article img{
+		width:200px;
+		
+	}
+
+	.container__item-quest1{
+		width:40%;
+	}
+	
+	.container__item-quest2{
+		width:60%;
+		
+	}
+	
+}
+
+@media (max-width:992px){
+
+	html{
+	font-size:52.5%;
+	}
+
+	.container{
+		max-width:740px;
+	}
+	.header{
+		grid-template-areas: 
+		"title number"
+		"open-hours  call-btn";	
+	}
+
+	#title{
+		padding:10px;
+	}
+	#open-hours{
+		margin:auto auto auto 10px;
+	}
+
+	#number{
+		margin:auto 0 auto auto;	
+	}
+
+	.nav a{
+		padding: 10px;
+	}
+
+	.article img{
+		width:150px;
+		
+	}	
+
+	.container__item-quest1{
+		width:50%;
+	}
+	
+	.container__item-quest2{
+		width:50%;
+		
+	}
+}
+
+@media (max-width:767px){
+	.container{
+		max-width: none;
+		min-width: 320px;
+	}
+
+	.header{
+		grid-template-areas: 
+		"title title" 
+		"open-hours open-hours" 
+		"number call-btn";	
+	}
+	#number{
+		margin:auto auto auto 0;
+		padding: 10px;	
+	}
+
+	#open-hours{
+		padding: 10px 0;	
+	}
+
+	.container{
+		flex-direction: column;
+		
+	}
+
+	.container__item{	
+		
+		width: 100%;
+		padding: 10px;
+		margin: 0 auto;
+		
+	}
+	.table-price {
+		width: calc(100% - 20px);
+	}
+
+	#container-white{ 
+		padding:10px
+	}
+
+	.article img{
+		width:190px;
+		
+	}	
+
+	#video{
+		margin: 20px 0 10px 0 ;
+	}
+
+	#img-questions{
+		width:130px;
+		margin:  5px;
+		
+	}
+
+
+	
+
+
+	.header-burger{
+		position: fixed;
+		width:100%;
+		height:60px;
+		top:0;
+		left:0;
+		background-color: rgba(255,173,1,0.9);
+		z-index: 3;
+	}
+	
+	#title{
+		position: fixed;
+		top:10px;
+		left:10px;
+		z-index:3;
+	}
+
+
+	.nav{
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background: rgb(246,246,246); 
+		z-index:2;
+		translate: -100%;
+		transition: 0.6s ease;
+		font-size: 2rem;
+		
+	}	
+
+	.nav.active{
+		translate: 0;
+		width: 70%;
+		display:block;
+		padding-top:70px;
+		font-size: 2rem;
+		position: fixed;
+		overflow: auto;
+		
+	}
+
+	.nav.active a{
+		translate: 0;
+		display:flex;
+		flex-direction: column;
+		justify-content: start;
+	}
+
+	.burger__menu{
+		display: block;
+		position: absolute;
+		width: 35px;
+		height: 24px;
+		right:10px;
+		top:17px;
+		
+
+
+	}
+
+	.burger__menu span{
+		position: absolute;
+		background-color: #000;
+		width: 100%;
+		left: 0;
+		height: 2px;
+		top: 11px;
+		transition: 0.4s ease;
+	}
+
+	.burger__menu::after,
+	.burger__menu::before{
+		content: '';
+		background-color: #000;
+		position: absolute;
+		width: 100%;
+		height:2px;
+		left:0;
+		transition: 0.4s ease;
+	}
+
+	.burger__menu::after{
+		bottom:0;
+	}
+
+	.burger__menu::before{
+		top:0;
+	}
+
+	burger__menu span::before{
+		top:0;
+	}
+
+
+	.burger__menu.active:before{
+		transform: rotate(45deg);
+		top: 11px;
+	}
+
+	.burger__menu.active:after{
+		transform: rotate(-45deg);
+		top: 11px;
+	}
+
+	.burger__menu.active span{
+		transform: scale(0);
+	}
+
+	.header{
+		margin-top:60px;
+	}
+
+	
+
+	.quest-grid{
+		grid-template-areas: 
+		"quest-header img-questions"
+		"quest-btn img-questions";
+	}
+
+}
+
+@media (max-width:470px){
+
+	html{
+		font-size:45%;
+		}
+
+	#img-girl1{ 
+		height:230px;
+	}
+
+	#cloud{
+		top: 10px; left:-10px;
+	}
+	
+	#cloud-text{
+		top: 18px; 
+		left:5px;
+	}
+
+	.check-list li{
+		padding-left: 15px;
+	}
+
+	.container__item{	
+		padding: 10px;
+	}
+
+	.man-icon{	
+	height: 40px;
+	float: left;
+	margin:5px ;
+	}
+
+	.btn-reg {
+		width:250px;
+	}
+
+	.call-button {
+		  width: 150px;
+	}
+
+	.article img{
+		width:130px;
+		
+	}	
+	#quest-btn{
+		width: 200px;
+	}
+
+	#img-questions{
+		width:100px;
+		margin:  5px;
+		
+	}
+
+	.footer-icons{
+		width:40px;
+		
+	}
+
+}

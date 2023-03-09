@@ -1,0 +1,105 @@
+.slide-container{
+	background-color: rgb(246,246,246); 
+	width:100%;
+	max-width:1200px;
+	
+}
+
+
+
+.card-image{
+	height:150px;
+	width:150px;
+	min-height:150px;
+	min-width:150px;
+	position:relative;
+	border-radius: 50%;
+	margin:10px 0 10px 0;
+}
+
+.card-img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 50%;
+	border: 3px solid rgb(255,173,1);
+}
+
+.image-content{
+	border-bottom: 2px solid rgb(246,246,246);
+	display:flex;
+	align-items:center;
+	flex-direction:column;
+	padding: 30px;
+	box-shadow: 0 20px 20px -20px #333;
+	
+}
+
+
+.slide-content{
+	padding:20px;
+}
+
+.feedback-header-date{
+	align-self: end;
+	color: gray;
+	
+}
+
+.feedback-header-name{
+	align-self: start;
+	color: gray;
+	padding:0 0 0 3px;
+}
+
+.feedback-header-short{
+	padding:0 0 0 3px;
+	font-size:2rem;
+	font-weight:600;
+	align-self: start;
+}
+
+.text-content{
+	padding: 30px;
+}
+
+.card{
+	height:400px;
+	border-radius: 24px;
+	background-color: rgb(256,256,256); 
+	display:flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.swiper-nav-btn{
+	color: #000;
+	transition:  0.3s ease;
+}
+
+.swiper-nav-btn:hover{
+	color: rgb(255,173,1);
+}
+
+
+.swiper-button-next{
+	right: 0;
+}
+
+.swiper-button-prev {
+	left: 0;
+}
+
+
+
+@media (max-width:767px) {
+  .swiper-nav-btn{
+    display: none;
+  }
+
+  .slide-content{
+	padding:10px;
+}
+}
+
+

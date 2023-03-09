@@ -1,0 +1,47 @@
+@font-face{
+	font-family: Mona-Sans;
+	src: url(fonts/Mona-Sans.ttf);
+}
+
+html{
+scroll-behavior: smooth;
+font-size:62.5%
+}
+
+body{
+background-color: rgba(240,240,240,1);
+font-family: Mona-Sans;
+font-size: 2rem;
+}
+.main{
+background-color:#fff;
+width:100%;
+max-width:700px;
+margin: 10px auto;
+padding: 20px;
+
+}
+
+.header{
+max-width:740px;	
+height: 70px;
+word-wrap:break-word;
+width:100%;
+
+margin:0 auto;
+display:flex;
+justify-content:start;
+line-height:70px;
+background-color:rgb(255,173,1);
+font-weight:800;
+font-size:3rem;
+
+}
+
+.bold{
+font-weight:700;
+}
+
+li{
+margin: 10px 0;
+}
